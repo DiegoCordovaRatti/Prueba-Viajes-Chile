@@ -1,0 +1,30 @@
+body{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#logo{
+    max-height: 30px;
+}
+
+.carousel-item{
+    object-fit: cover;
+    margin-top: -11%;
+}
+
+.c3{
+    object-fit: cover;
+    margin-bottom: -5%;
+    margin-top: -6%;
+}
+
+hr{
+    background-color: #3a788b;
+    border-radius: 10%;
+    height: 1px;
+}
+
+.card-img-top{
+    object-fit: cover;
+    height: 220px;
+}

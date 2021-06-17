@@ -1,7 +1,7 @@
 /* Enable tooltips */
 $(function () {
     $('[data-toggle="tooltip"]').tooltip({
-        delay: { "show": 500, "hide": 100 }
+        delay: { "show": 300, "hide": 100 } /* adds delay to the tooltip */
     });
   });
 

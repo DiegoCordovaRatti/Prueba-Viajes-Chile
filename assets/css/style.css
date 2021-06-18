@@ -1,6 +1,12 @@
 body{
     background-color: #000000;
     color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+h2, h4, h5{
+    font-weight: 400;
 }
 
 #logo{
@@ -24,9 +30,19 @@ hr{
     height: 1px;
 }
 
-.card-img-top{
+.modal-body hr{
+    background-color: #ffffff;
+    border-radius: 10%;
+    height: 1px;
+}
+
+.card-img-top, .modal-img{
     object-fit: cover;
     height: 220px;
+}
+
+.card-header{
+    height: 20%;
 }
 
 a{

@@ -13,6 +13,9 @@
 
     <title>Document</title>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+
     <!-- Bootstrap 4.6 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -29,7 +32,7 @@
     <!-- navbar -->
     <section>
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top px-5">
-            <a class="navbar-brand" href="#"> 
+            <a class="navbar-brand" href="#">
                 <img src="assets\img\viajes.svg" id="logo" alt="logo">
                 Viajes Chile
             </a>
@@ -40,16 +43,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link mx-2" href="#inicio">Inicio</a>
+                        <a class="nav-link mx-2 smooth" href="#inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="#quienes_somos">Quienes somos</a>
+                        <a class="nav-link mx-2 smooth d-none d-md-block" href="#quienes_somos">Quienes somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="#destacados">Destacados</a>
+                        <a class="nav-link mx-2 smooth" href="#destacados">Destacados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="#contacto">Contacto</a>
+                        <a class="nav-link mx-2 smooth" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -80,7 +83,7 @@
         </div>
     </header>
     <!-- Quienes somos -->
-    <section id="quienes_somos" class="mx-5 py-5">
+    <section id="quienes_somos" class="mx-5 py-5 d-none d-md-block">
 
         <h2 class="text-center">¿Quienes somos?</h2>
         <hr>
@@ -133,36 +136,207 @@
         <hr>
 
         <div class="card-deck px-3 pt-3">
-            <!-- agregar modales!!!!! -->
             <div class="card bg-info opacity">
-                <img src="assets\img\card1.jpg" class="card-img-top" alt="...">
+                <img src="assets\img\card1.jpg" class="card-img-top" alt="paisaje1">
+                <div class="card-header">
+                    <h4 class="card-title">Lorem ipsum dolor sit amet.</h4>
+                </div>
                 <div class="card-body">
-                    <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, ex! Rem nesciunt facilis eos hic minus repellat omnis quaerat voluptatum!</p>
+                    <h5 class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, ex! Rem nesciunt
+                        facilis eos hic minus repellat omnis quaerat voluptatum!</h5>
+                </div>
+                <!-- button para modal -->
+                <div class="card-footer text-right">
+                    <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modal1">
+                        <span><i class="fas fa-plus-circle"> </i> Ver más</span>
+                    </button>
                 </div>
             </div>
-            <div class="card bg-info opacity">
-                <img src="assets\img\card2.jpg" class="card-img-top crop-img" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Lorem ipsum dolor sit.</h5>
-                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, temporibus nostrum! Velit eius sit modi exercitationem obcaecati tempore, necessitatibus deleniti!</p>
+            <!-- Modal va fuera de la card. Si no, se ve afectado por el Hover -->
+            <div class="modal fade" id="modal1" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content bg-dark">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="staticBackdropLabel">Modal title</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="w-100 modal-img" src="assets\img\card1.jpg" alt="paisaje1">
+                            <hr>
+                            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae reprehenderit
+                                saepe, eius eaque perspiciatis laborum nostrum accusantium animi modi doloribus ratione
+                                at excepturi mollitia quisquam placeat, eum quod nihil corporis velit laboriosam quidem
+                                quaerat. Doloribus pariatur, velit cum numquam et, natus error fuga, facilis porro
+                                ratione veniam. Tempora culpa magnam quae commodi corporis excepturi quaerat. Molestiae
+                                repellat odio ipsum vero, ullam reprehenderit! Minus cupiditate, voluptatem fuga odit
+                                repellat sequi hic illum consequatur ullam sed. Nihil dolores sed iure minus numquam
+                                aliquam. Neque repellat repellendus harum facere veritatis, deserunt quod mollitia sit
+                                qui doloremque, nam eius nisi dolorum molestias doloribus atque optio quaerat cumque.
+                                Consectetur odit veritatis dolorum quasi ipsam. Sint nam aliquam earum eum ad corporis
+                                vero quaerat numquam quidem.</span>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-light" data-dismiss="modal"><span><i
+                                        class="fas fa-times-circle"> </i> Cerrar</span></button>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <div class="card bg-info opacity">
-                <img src="assets\img\card3.jpg" class="card-img-top" alt="...">
+                <img src="assets\img\card2.jpg" class="card-img-top" alt="paisaje2">
+                <div class="card-header">
+                    <h4 class="card-title">Lorem ipsum dolor sit.</h4>
+                </div>
                 <div class="card-body">
-                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam excepturi harum odio adipisci quas accusantium sint hic veniam? Officia, odit!</p>
+                    <h5 class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, temporibus
+                        nostrum! Velit eius sit modi exercitationem obcaecati tempore, necessitatibus deleniti!</h5>
+                </div>
+                <!-- button para modal -->
+                <div class="card-footer text-right">
+                    <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modal2">
+                        <span><i class="fas fa-plus-circle"> </i> Ver más</span>
+                    </button>
                 </div>
             </div>
-            <div class="card bg-info opacity">
-                <img src="assets\img\card4.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Lorem ipsum dolor sit.</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit, sit officia quisquam libero deleniti excepturi ad sequi ipsam tempore.</p>
+            <!-- Modal va fuera de la card. Si no, se ve afectado por el Hover -->
+            <div class="modal fade" id="modal2" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content bg-dark">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="staticBackdropLabel">Modal title</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="w-100 modal-img" src="assets\img\card2.jpg" alt="paisaje2">
+                            <hr>
+                            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae reprehenderit
+                                saepe, eius eaque perspiciatis laborum nostrum accusantium animi modi doloribus ratione
+                                at excepturi mollitia quisquam placeat, eum quod nihil corporis velit laboriosam quidem
+                                quaerat. Doloribus pariatur, velit cum numquam et, natus error fuga, facilis porro
+                                ratione veniam. Tempora culpa magnam quae commodi corporis excepturi quaerat. Molestiae
+                                repellat odio ipsum vero, ullam reprehenderit! Minus cupiditate, voluptatem fuga odit
+                                repellat sequi hic illum consequatur ullam sed. Nihil dolores sed iure minus numquam
+                                aliquam. Neque repellat repellendus harum facere veritatis, deserunt quod mollitia sit
+                                qui doloremque, nam eius nisi dolorum molestias doloribus atque optio quaerat cumque.
+                                Consectetur odit veritatis dolorum quasi ipsam. Sint nam aliquam earum eum ad corporis
+                                vero quaerat numquam quidem.</span>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-light" data-dismiss="modal"><span><i
+                                        class="fas fa-times-circle"> </i> Cerrar</span></button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+
+            <div class="card bg-info opacity">
+                <img src="assets\img\card3.jpg" class="card-img-top" alt="paisaje3">
+                <div class="card-header">
+                    <h4 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam excepturi
+                        harum odio adipisci quas accusantium sint hic veniam? Officia, odit!</h5>
+                </div>
+                <!-- button para modal -->
+                <div class="card-footer text-right">
+                    <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modal3">
+                        <span><i class="fas fa-plus-circle"> </i> Ver más</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Modal va fuera de la card. Si no, se ve afectado por el Hover -->
+            <div class="modal fade" id="modal3" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content bg-dark">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="staticBackdropLabel">Modal title</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="w-100 modal-img" src="assets\img\card3.jpg" alt="paisaje3">
+                            <hr>
+                            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae reprehenderit
+                                saepe, eius eaque perspiciatis laborum nostrum accusantium animi modi doloribus ratione
+                                at excepturi mollitia quisquam placeat, eum quod nihil corporis velit laboriosam quidem
+                                quaerat. Doloribus pariatur, velit cum numquam et, natus error fuga, facilis porro
+                                ratione veniam. Tempora culpa magnam quae commodi corporis excepturi quaerat. Molestiae
+                                repellat odio ipsum vero, ullam reprehenderit! Minus cupiditate, voluptatem fuga odit
+                                repellat sequi hic illum consequatur ullam sed. Nihil dolores sed iure minus numquam
+                                aliquam. Neque repellat repellendus harum facere veritatis, deserunt quod mollitia sit
+                                qui doloremque, nam eius nisi dolorum molestias doloribus atque optio quaerat cumque.
+                                Consectetur odit veritatis dolorum quasi ipsam. Sint nam aliquam earum eum ad corporis
+                                vero quaerat numquam quidem.</span>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-light" data-dismiss="modal"><span><i
+                                        class="fas fa-times-circle"> </i> Cerrar</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card bg-info opacity">
+                <img src="assets\img\card4.jpg" class="card-img-top" alt="paisaje4">
+                <div class="card-header">
+                    <h4 class="card-title">Lorem ipsum dolor sit.</h4>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit, sit
+                        officia quisquam libero deleniti excepturi ad sequi ipsam tempore.</h5>
+                </div>
+                <!-- button para modal -->
+                <div class="card-footer text-right">
+                    <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modal4">
+                        <span><i class="fas fa-plus-circle"> </i> Ver más</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Modal va fuera de la card. Si no, se ve afectado por el Hover -->
+            <div class="modal fade" id="modal4" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content bg-dark">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="staticBackdropLabel">Modal title</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="w-100 modal-img" src="assets\img\card4.jpg" alt="paisaje4">
+                            <hr>
+                            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae reprehenderit
+                                saepe, eius eaque perspiciatis laborum nostrum accusantium animi modi doloribus ratione
+                                at excepturi mollitia quisquam placeat, eum quod nihil corporis velit laboriosam quidem
+                                quaerat. Doloribus pariatur, velit cum numquam et, natus error fuga, facilis porro
+                                ratione veniam. Tempora culpa magnam quae commodi corporis excepturi quaerat. Molestiae
+                                repellat odio ipsum vero, ullam reprehenderit! Minus cupiditate, voluptatem fuga odit
+                                repellat sequi hic illum consequatur ullam sed. Nihil dolores sed iure minus numquam
+                                aliquam. Neque repellat repellendus harum facere veritatis, deserunt quod mollitia sit
+                                qui doloremque, nam eius nisi dolorum molestias doloribus atque optio quaerat cumque.
+                                Consectetur odit veritatis dolorum quasi ipsam. Sint nam aliquam earum eum ad corporis
+                                vero quaerat numquam quidem.</span>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-light" data-dismiss="modal"><span><i
+                                        class="fas fa-times-circle"> </i> Cerrar</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
     </section>
 
     <!-- TYPEFORMS -->
@@ -196,10 +370,16 @@
                 <h2>VIAJES CHILE</h2>
             </div>
             <div class="col-sm-8 col-lg-6 text-center">
-                <a class="py-2" href="https://www.github.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Visita nuestro GitHub"><i class="fab fa-github-square fa-2x mx-2"></i></a>
-                <a class="py-2" href="https://www.linkedin.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Visita nuestro LinkedIn"><i class="fab fa-linkedin fa-2x mx-2"></i></a>
-                <a class="py-2" href="https://twitter.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Visita nuestro Twitter"><i class="fab fa-twitter-square fa-2x mx-2"></i></a>
-                <a class="py-2" href="https://www.facebook.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Visita nuestro Facebook"><i class="fab fa-facebook-square fa-2x mx-2"></i></a>
+                <a class="py-2" href="https://www.github.com/" target="_blank" data-toggle="tooltip"
+                    data-placement="top" title="Visita nuestro GitHub"><i
+                        class="fab fa-github-square fa-2x mx-2"></i></a>
+                <a class="py-2" href="https://www.linkedin.com/" target="_blank" data-toggle="tooltip"
+                    data-placement="top" title="Visita nuestro LinkedIn"><i class="fab fa-linkedin fa-2x mx-2"></i></a>
+                <a class="py-2" href="https://twitter.com/" target="_blank" data-toggle="tooltip" data-placement="top"
+                    title="Visita nuestro Twitter"><i class="fab fa-twitter-square fa-2x mx-2"></i></a>
+                <a class="py-2" href="https://www.facebook.com/" target="_blank" data-toggle="tooltip"
+                    data-placement="top" title="Visita nuestro Facebook"><i
+                        class="fab fa-facebook-square fa-2x mx-2"></i></a>
             </div>
         </div>
     </footer>

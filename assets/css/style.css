@@ -45,18 +45,20 @@ hr{
     height: 20%;
 }
 
-a{
-    text-decoration: none;
-    color: inherit; /* hereda el color del elemento padre */
-}
-
 .opacity{
     opacity: 0.7;
     transition: 500ms ease-in-out;
+    border-color: #cccccc;
+    border-width: 3px;
 }
 
 .opacity:hover{
     opacity: 1;
-    border-color:aquamarine;
+    border-color:#ffffff;
     bottom: 2px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit; /* hereda el color del elemento padre */
 }

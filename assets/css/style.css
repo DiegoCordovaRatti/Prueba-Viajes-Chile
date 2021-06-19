@@ -1,64 +1,77 @@
-body{
+body {
     background-color: #000000;
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
 }
 
-h2, h4, h5{
+h2, h4, h5 {
     font-weight: 400;
 }
 
-#logo{
+/* controla tamaño svg */
+#logo {
     max-height: 30px;
 }
 
-.carousel-item{
+/* hace que las imagenes 1 y 2 del carousel se recorten desde arriba */
+.carousel-item {
     object-fit: cover;
     margin-top: -11%;
 }
 
-.c3{
+/* las imagen 3 se recorta desde arriba y abajo para calzar mejor */
+.c3 {
     object-fit: cover;
     margin-bottom: -5%;
     margin-top: -6%;
 }
 
-hr{
+/* crea la linea debajo de cada inicio de sección */
+hr {
     background-color: #3a788b;
     border-radius: 10%;
     height: 1px;
 }
 
-.modal-body hr{
+/* cambia el color de las lineas dentro de los modales */
+.modal-body hr {
     background-color: #ffffff;
     border-radius: 10%;
     height: 1px;
 }
 
-.card-img-top, .modal-img{
+.card {
+    height: 100%;
+}
+/* recorta las imagenes para mantenerlas del mismo tamaño */
+.card-img-top, .modal-img {
     object-fit: cover;
     height: 220px;
 }
 
-.card-header{
+/* mantiene el header de las card iguales */
+.card-header {
     height: 20%;
 }
 
-.opacity{
+/* inicio de hover en las cards */
+.opacity {
     opacity: 0.7;
     transition: 500ms ease-in-out;
     border-color: #cccccc;
     border-width: 3px;
 }
 
-.opacity:hover{
+/* fin del hover en las cartas */
+.opacity:hover {
     opacity: 1;
-    border-color:#ffffff;
+    border-color: #ffffff;
     bottom: 2px;
 }
 
-a{
+a {
     text-decoration: none;
-    color: inherit; /* hereda el color del elemento padre */
+    color: inherit;
+    /* hereda el color del elemento padre */
 }
